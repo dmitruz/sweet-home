@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "1 bedroom appartment Newton Street 3",
+        "price": "1000 p/m",
+        "img": "http://localhost:3001/images/apartment.jpg"
+    },
+    {
+        "id": 2,
+        "name": "1 bedroom appartment Newton Street 3",
+        "price": "1000 p/m",
+        "img": "http://localhost:3001/images/apartment1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "1 bedroom appartment Newton Street 3",
+        "price": "1000 p/m",
+        "img": "http://localhost:3001/images/apartment2.jpg"
+    }
+]
