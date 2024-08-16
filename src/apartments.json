@@ -1,20 +1,92 @@
 [
     {
         "id": 1,
-        "name": "1 bedroom appartment Newton Street 3",
+        "name": "1 bedroom appartment",
+        "address": "Newton Street 3",
         "price": "1000 p/m",
-        "img": "http://localhost:3001/images/apartment.jpg"
+        "img": "http://localhost:3001/images/apartment.jpg",
+        "description": "Partly furnished 1 bedroom appartment on the 3-th floor.",
+        "more": "More info:"
     },
     {
         "id": 2,
-        "name": "1 bedroom appartment Newton Street 3",
+        "name": "1 bedroom appartment",
+        "address": "Newton Street 3",
         "price": "1000 p/m",
-        "img": "http://localhost:3001/images/apartment1.jpg"
+        "img": "http://localhost:3001/images/apartment1.jpg",
+        "description": "Partly furnished 1 bedroom appartment on the 3-th floor.",
+        "more": "More info:"
     },
     {
         "id": 3,
-        "name": "1 bedroom appartment Newton Street 3",
+        "name": "1 bedroom appartment",
+        "address": "Newton Street 3",
         "price": "1000 p/m",
-        "img": "http://localhost:3001/images/apartment2.jpg"
+        "img": "http://localhost:3001/images/apartment2.jpg",
+        "description": "Partly furnished 1 bedroom appartment on the 3-th floor.",
+        "more": "More info:"
+    },
+    {
+        "id": 4,
+        "name": "2 bedroom appartment",
+        "address": "Princess Street 87",
+        "price": "2300 p/m",
+        "img": "http://localhost:3001/images/apartment9.jpg",
+        "description": "Fully  furnished 2 bedroom appartment on the 5th floor.",
+        "more": "More info:"
+    },
+    {
+        "id": 5,
+        "name": "3 bedroom appartment",
+        "address": "Leith Walk 12",
+        "price": "1800 p/m",
+        "img": "http://localhost:3001/images/apartment4.jpg",
+        "description": "Partly furnished 3 bedroom appartment on the 3-th floor.",
+        "more": "More info:"
+    },
+    {
+        "id": 6,
+        "name": "2 bedroom appartment",
+        "address": "Leith Walk 23",
+        "price": "1200 p/m",
+        "img": "http://localhost:3001/images/apartment5.jpg",
+        "description": "Unfurnished 2 bedroom appartment on the 1-th floor.",
+        "more": "More info:"
+    },
+    {
+        "id": 7,
+        "name": "1 bedroom appartment",
+        "address": "George Road 35",
+        "price": "950 p/m",
+        "img": "http://localhost:3001/images/apartment6.jpg",
+        "description": "Unfurnished 1 bedroom appartment on the 3-th floor.",
+        "more": "More info:"
+    },
+    {
+        "id": 8,
+        "name": "Studio",
+        "address": "High Street 14",
+        "price": "1200 p/m",
+        "img": "http://localhost:3001/images/apartment7.jpg",
+        "description": "Fully  furnished studio appartment on 2nd floor.",
+        "more": "More info:"
+    },
+    {
+        "id": 9,
+        "name": "2 bedroom appartment",
+        "address": "York Place 2",
+        "price": "2500 p/m",
+        "img": "http://localhost:3001/images/apartment8.jpg",
+        "description": "Partly furnished 2 bedroom appartment on 3-th floor.",
+        "more": "More info:"
+    },
+    {
+        "id": 2,
+        "name": "studio",
+        "address": "Princess Street 99",
+        "price": "1550 p/m",
+        "img": "http://localhost:3001/images/apartment9.jpg",
+        "description": "Fully furnished studio appartment on the 3-th floor.",
+        "more": "More info:"
     }
 ]

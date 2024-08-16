@@ -1,5 +1,5 @@
 import React from 'react';
-import { Apartments } from './components/Apartments';
+import { Apartments } from './components/Apartments/Apartments';
 import './App.css';
 
 function App() {
