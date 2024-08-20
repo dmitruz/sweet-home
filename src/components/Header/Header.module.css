@@ -1,0 +1,47 @@
+
+.header {
+    display: flex; 
+    background-color: #f2f2f2;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    padding: 20px 0 0 10px;
+}
+
+.siteName {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+
+
+.headerList {
+    display: flex;
+    list-style: none;
+}
+
+.headerItem {
+    margin-right: 40px;
+}
+
+.headerLink {
+    text-decoration: none;
+    color: rgb(7, 171, 225);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.headerLink:hover {
+    color: #007bff;
+}
