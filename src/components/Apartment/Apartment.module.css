@@ -38,3 +38,34 @@
     font-weight: 500;
     color: #585151;
 }
+
+.customSlickArrow {
+    position: absolute;
+    top: 90% !important;
+    /* Move arrows to 90% from the top */
+    z-index: 1;
+    transform: translateY(-50%);
+    /* Example background color */
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    opacity: 0.75 !important;
+}
+
+/* Specific positioning for the left arrow */
+.customSlickPrev {
+    left: 40% !important;
+    /* Custom position for the left arrow */
+    transform: translateX(-50%) translateY(-50%) !important;
+}
+
+/* Specific positioning for the right arrow */
+.customSlickNext {
+    left: 60% !important;
+    /* Custom position for the right arrow */
+    transform: translateX(-50%) translateY(-50%) !important;
+}
+
+.slick-dots {
+    bottom: -4px !important;
+}

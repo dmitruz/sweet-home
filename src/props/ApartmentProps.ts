@@ -1,5 +1,5 @@
 export interface ApartmentProps {
-    img: string;
+    img: string[];
     price: string;
     name: string;
     address: string;
