@@ -39,6 +39,10 @@
     color: #585151;
 }
 
+.apartmentMore {
+    display: flex;
+}
+
 .customSlickArrow {
     position: absolute;
     top: 90% !important;
@@ -67,5 +71,5 @@
 }
 
 .slick-dots {
-    bottom: -4px !important;
+    bottom: -4px;
 }

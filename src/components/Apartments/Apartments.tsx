@@ -14,6 +14,7 @@ export const Apartments = () => {
                     <Apartment
                         key={apartment.id}
                         img={apartment.img}
+                        category={apartment.category}
                         price={apartment.price}
                         name={apartment.name}
                         address={apartment.address}

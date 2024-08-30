@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "category": "to rent",
         "name": "1 bedroom appartment",
         "address": "Newton Street 3",
         "price": "1000 p/m",
@@ -13,6 +14,7 @@
     },
     {
         "id": 2,
+        "category": "for sale",
         "name": "1 bedroom appartment",
         "address": "Newton Street 3",
         "price": "1000 p/m",
@@ -25,6 +27,7 @@
     },
     {
         "id": 3,
+        "category": "to rent",
         "name": "1 bedroom appartment",
         "address": "Newton Street 3",
         "price": "1000 p/m",
@@ -37,6 +40,7 @@
     },
     {
         "id": 4,
+        "category": "for sale",
         "name": "2 bedroom appartment",
         "address": "Princess Street 87",
         "price": "2300 p/m",
@@ -49,6 +53,7 @@
     },
     {
         "id": 5,
+        "category": "to rent",
         "name": "3 bedroom appartment",
         "address": "Leith Walk 12",
         "price": "1800 p/m",
@@ -61,6 +66,7 @@
     },
     {
         "id": 6,
+        "category": "for sale",
         "name": "2 bedroom appartment",
         "address": "Leith Walk 23",
         "price": "1200 p/m",
@@ -73,6 +79,7 @@
     },
     {
         "id": 7,
+        "category": "to rent",
         "name": "1 bedroom appartment",
         "address": "George Road 35",
         "price": "950 p/m",
@@ -85,6 +92,7 @@
     },
     {
         "id": 8,
+        "category": "for sale",
         "name": "Studio",
         "address": "High Street 14",
         "price": "1200 p/m",
@@ -97,6 +105,7 @@
     },
     {
         "id": 9,
+        "category": "to rent",
         "name": "2 bedroom appartment",
         "address": "York Place 2",
         "price": "2500 p/m",
@@ -109,6 +118,7 @@
     },
     {
         "id": 2,
+        "category": "for sale",
         "name": "studio",
         "address": "Princess Street 99",
         "price": "1550 p/m",
