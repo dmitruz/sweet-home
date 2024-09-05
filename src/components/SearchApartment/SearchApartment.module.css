@@ -1,0 +1,20 @@
+
+.searchBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchContainer {
+    display: flex;
+
+}
+
+.priceRangeBlock {
+    display: flex;
+}
+
+.priceContainer {
+    display: flex;
+    flex-direction: column;
+    
+}

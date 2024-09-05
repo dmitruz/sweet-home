@@ -8,7 +8,6 @@ export const Apartments = () => {
 
     return (
         <>
-            <h1>Apartment</h1>
             <div className={styles.apartmentContainer}>
                 {data.map((apartment) => (
                     <Apartment
