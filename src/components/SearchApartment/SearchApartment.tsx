@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ApartmentSearchProps } from '../../props/ApartmentSearchProps';
-
 import style from './SearchApartment.module.css';
-
 
 export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) => {
     const [status, setStatus] = useState('');
@@ -32,7 +30,6 @@ export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) =>
         setShowMinDropdown(false);
         setShowMaxDropdown(false);
     };
-
 
     const handleMinPriceSelect = (price: number) => {
         setMinPrice(price);
@@ -74,53 +71,49 @@ export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) =>
                     <option value="For Sale">For Sale</option>
                     <option value="To Rent">To Rent</option>
                 </select>
-
             </div>
             <div className={style.priceContainer}>
-                <input className={style.priceInput}
+                <input
+                    className={style.priceInput}
                     type="text"
                     value={minPrice ? minPrice.toString() : ''}
                     placeholder="Min Price"
                     readOnly
-                    onClick={() => setShowMinDropdown(!showMinDropdown)} />
+                    onClick={() => setShowMinDropdown(!showMinDropdown)}
+                />
                 {showMinDropdown && (
-                    <div className={style.priceOptions}>
+                    <div ref={minDropdownRef} className={style.priceOptions}>
                         {priceOptions.map((price) => (
-                            <div
-                                key={price}
-                                onClick={() => handleMinPriceSelect(price)}
-
-                            >
+                            <div key={price} onClick={() => handleMinPriceSelect(price)}>
                                 {price}
                             </div>
                         ))}
                     </div>
                 )}
-                {/* </div> */}
-                <div className={style.priceContainer}>
-                    <input className={style.priceInput}
-                        type="text"
-                        value={maxPrice ? maxPrice.toString() : ''}
-                        placeholder="Max Price"
-                        readOnly
-                        onClick={() => setShowMaxDropdown(!showMaxDropdown)} />
-                    {showMaxDropdown && (
-                        <div className={style.priceOptions}>
-                            {priceOptions.map((price) => (
-                                <div
-                                    key={price}
-                                    onClick={() => handleMaxPriceSelect(price)}
-                                >
-                                    {price}
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
+            </div>
+            <div className={style.priceContainer}>
+                <input
+                    className={style.priceInput}
+                    type="text"
+                    value={maxPrice ? maxPrice.toString() : ''}
+                    placeholder="Max Price"
+                    readOnly
+                    onClick={() => setShowMaxDropdown(!showMaxDropdown)}
+                />
+                {showMaxDropdown && (
+                    <div ref={maxDropdownRef} className={style.priceOptions}>
+                        {priceOptions.map((price) => (
+                            <div key={price} onClick={() => handleMaxPriceSelect(price)}>
+                                {price}
+                            </div>
+                        ))}
+                    </div>
+                )}
             </div>
             <button className={style.searchBtn} onClick={handleSearch}>
                 Search
             </button>
+
         </section>
     );
 };

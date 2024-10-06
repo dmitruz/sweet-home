@@ -10,13 +10,21 @@ export const Header = () => {
             <nav className={styles.nav}>
                 <ul className={styles.headerList}>
                     <li className={styles.headerItem}>
-                        <a href="/" className={styles.headerLink}>To rent</a>
+                        <button
+                            className={styles.headerLink}>
+                            To rent
+                        </button>
                     </li>
                     <li className={styles.headerItem}>
-                        <a href="/" className={styles.headerLink}>For sale</a>
+                        <button
+
+                            className={styles.headerLink}>
+                            For sale
+                        </button>
                     </li>
                     <li className={styles.headerItem}>
-                        <a href="/" className={styles.headerLink}>About Us</a>
+                        <button
+                            className={styles.headerLink}>About Us</button>
                     </li>
                 </ul>
             </nav>
