@@ -7,13 +7,16 @@ import styles from './Apartments.module.css';
 
 interface ApartmentsProps {
     selectedCategory: string;
+    selectedRooms: number | null;
 }
 
-export const Apartments: React.FC<ApartmentsProps> = ({ selectedCategory }) => {
+export const Apartments: React.FC<ApartmentsProps> = ({ selectedCategory, selectedRooms }) => {
     // Filter apartments based on selected category
-    const filteredApartments = data.filter((apartment) =>
-        selectedCategory ? apartment.category.toLowerCase() === selectedCategory.toLowerCase() : true
-    );
+    const filteredApartments = data.filter((apartment) => {
+        const matchesCategory = selectedCategory ? apartment.category.toLowerCase() === selectedCategory.toLowerCase() : true;
+        const matchesRooms = selectedRooms !== null ? apartment.rooms === selectedRooms : true;
+        return matchesCategory && matchesRooms;
+    });
 
     return (
         <>

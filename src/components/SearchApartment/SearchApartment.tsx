@@ -1,9 +1,11 @@
+
+
 import React, { useState, useEffect, useRef } from 'react';
 import { ApartmentSearchProps } from '../../props/ApartmentSearchProps';
 import style from './SearchApartment.module.css';
 
 export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) => {
-    const [status, setStatus] = useState('');
+    const [status, setStatus] = useState('');  // For rooms selection
     const [minPrice, setMinPrice] = useState<number | null>(null);
     const [maxPrice, setMaxPrice] = useState<number | null>(null);
     const [showMinDropdown, setShowMinDropdown] = useState(false);
@@ -20,28 +22,27 @@ export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) =>
             return;
         }
 
-        // Trigger the search callback
+        // Trigger the search callback with the selected values
         onSearch(status, minPrice, maxPrice);
 
-        // Clear the selection after the search
-        setStatus('');
-        setMinPrice(null);
-        setMaxPrice(null);
-        setShowMinDropdown(false);
-        setShowMaxDropdown(false);
+        // Clear the selection after search
+        setStatus('');  // Clear status selection
+        setMinPrice(null); // Clear min price selection
+        setMaxPrice(null); // Clear max price selection
+        setShowMinDropdown(false); // Close min price dropdown if open
+        setShowMaxDropdown(false); // Close max price dropdown if open
     };
 
     const handleMinPriceSelect = (price: number) => {
         setMinPrice(price);
-        setShowMinDropdown(false);
+        setShowMinDropdown(false); // Close the dropdown after selecting a price
     };
 
     const handleMaxPriceSelect = (price: number) => {
         setMaxPrice(price);
-        setShowMaxDropdown(false);
+        setShowMaxDropdown(false); // Close the dropdown after selecting a price
     };
 
-    // Function to close the dropdowns when clicking outside
     const handleClickOutside = (event: MouseEvent) => {
         if (minDropdownRef.current && !minDropdownRef.current.contains(event.target as Node)) {
             setShowMinDropdown(false);
@@ -51,7 +52,6 @@ export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) =>
         }
     };
 
-    // Add event listener to detect clicks outside of the dropdowns
     useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
@@ -59,17 +59,17 @@ export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) =>
         };
     }, []);
 
-
     return (
         <section className={style.searchBlock}>
             <div className={style.searchContainer}>
                 <div>
-                    <span className={style.searchStatus}>Search by Status:</span>
+                    <span className={style.searchStatus}>Filters:</span>
                 </div>
                 <select onChange={(e) => setStatus(e.target.value)} value={status}>
-                    <option value="">Select Status</option>
-                    <option value="For Sale">For Sale</option>
-                    <option value="To Rent">To Rent</option>
+                    <option value="">Select number of rooms</option>
+                    <option value="1">1 bedroom</option>
+                    <option value="2">2 bedrooms</option>
+                    <option value="3">3 bedrooms</option>
                 </select>
             </div>
             <div className={style.priceContainer}>
@@ -113,7 +113,6 @@ export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) =>
             <button className={style.searchBtn} onClick={handleSearch}>
                 Search
             </button>
-
         </section>
     );
 };
