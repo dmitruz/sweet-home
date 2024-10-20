@@ -1,6 +1,7 @@
 
 import styles from './Header.module.css';
-import sweetHome from '../../images/logo.png'
+import sweetHome from '../../images/logo.png';
+import { Link } from 'react-router-dom';
 
 interface HeaderProps {
     onFilter: (category: string) => void;
@@ -30,8 +31,9 @@ export const Header: React.FC<HeaderProps> = ({ onFilter }) => {
                         </button>
                     </li>
                     <li className={styles.headerItem}>
-                        <button
-                            className={styles.headerLink}>About Us</button>
+                        <Link to="/about-us" className={styles.headerLink}>
+                            About Us
+                        </Link>
                     </li>
                 </ul>
             </nav>

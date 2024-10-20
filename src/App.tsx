@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Apartments } from './components/Apartments/Apartments';
 import { Header } from './components/Header/Header';
 import './App.css';
 import { SearchApartment } from './components/SearchApartment/SearchApartment';
+import { AboutUs } from './components/AboutUs/AboutUs';
 //import { handleSearch } from './fetures/SearchFunctionality';
 
 const App: React.FC = () => {
@@ -21,11 +23,24 @@ const App: React.FC = () => {
 
 
   return (
-    <div className="App">
-      <Header onFilter={handleFilter} />
-      <SearchApartment onSearch={handleSearchFilter} />
-      <Apartments selectedCategory={filterCategory} selectedRooms={selectedRooms} />
-    </div>
+    <Router>
+      <div className="App">
+        <Header onFilter={handleFilter} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <SearchApartment onSearch={handleSearchFilter} />
+                <Apartments selectedCategory={filterCategory} selectedRooms={selectedRooms} />
+              </>
+            }
+          />
+          <Route path="/about-us" element={<AboutUs />} />
+        </Routes>
+      </div>
+    </Router>
+
   );
 }
 
