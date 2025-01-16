@@ -1,11 +1,14 @@
 
-
 import React, { useState, useEffect, useRef } from 'react';
 import { ApartmentSearchProps } from '../../props/ApartmentSearchProps';
 import style from './SearchApartment.module.css';
 
-export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) => {
-    const [status, setStatus] = useState('');  // For rooms selection
+interface ExtendedApartmentSearchProps extends ApartmentSearchProps {
+    priceRange: { min: number; max: number };
+}
+
+export const SearchApartment: React.FC<ExtendedApartmentSearchProps> = ({ onSearch, priceRange }) => {
+    const [status, setStatus] = useState('');
     const [minPrice, setMinPrice] = useState<number | null>(null);
     const [maxPrice, setMaxPrice] = useState<number | null>(null);
     const [showMinDropdown, setShowMinDropdown] = useState(false);
@@ -14,33 +17,33 @@ export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) =>
     const minDropdownRef = useRef<HTMLDivElement>(null);
     const maxDropdownRef = useRef<HTMLDivElement>(null);
 
-    const priceOptions = Array.from({ length: 24 }, (_, i) => 500 + i * 100);
-
+    const priceOptions = Array.from(
+        { length: Math.ceil((priceRange.max - priceRange.min) / (status === 'for sale' ? 1000 : 100)) + 1 },
+        (_, i) => priceRange.min + i * (status === 'for sale' ? 1000 : 100)
+    );
     const handleSearch = () => {
         if (!status) {
             alert('Please select a status');
             return;
         }
 
-        // Trigger the search callback with the selected values
         onSearch(status, minPrice, maxPrice);
 
-        // Clear the selection after search
-        setStatus('');  // Clear status selection
-        setMinPrice(null); // Clear min price selection
-        setMaxPrice(null); // Clear max price selection
-        setShowMinDropdown(false); // Close min price dropdown if open
-        setShowMaxDropdown(false); // Close max price dropdown if open
+        setStatus('');
+        setMinPrice(null);
+        setMaxPrice(null);
+        setShowMinDropdown(false);
+        setShowMaxDropdown(false);
     };
 
     const handleMinPriceSelect = (price: number) => {
         setMinPrice(price);
-        setShowMinDropdown(false); // Close the dropdown after selecting a price
+        setShowMinDropdown(false);
     };
 
     const handleMaxPriceSelect = (price: number) => {
         setMaxPrice(price);
-        setShowMaxDropdown(false); // Close the dropdown after selecting a price
+        setShowMaxDropdown(false);
     };
 
     const handleClickOutside = (event: MouseEvent) => {
@@ -59,13 +62,17 @@ export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) =>
         };
     }, []);
 
-    return (
+    return ( // Ensure JSX is returned
         <section className={style.searchBlock}>
             <div className={style.searchContainer}>
                 <div>
                     <span className={style.searchStatus}>Filters:</span>
                 </div>
-                <select className={style.searchSelect} onChange={(e) => setStatus(e.target.value)} value={status}>
+                <select
+                    className={style.searchSelect}
+                    onChange={(e) => setStatus(e.target.value)}
+                    value={status}
+                >
                     <option value="">Select number of rooms</option>
                     <option value="1">1 bedroom</option>
                     <option value="2">2 bedrooms</option>
