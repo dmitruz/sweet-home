@@ -5,6 +5,7 @@ import { Header } from './components/Header/Header';
 import './App.css';
 import { SearchApartment } from './components/SearchApartment/SearchApartment';
 import { AboutUs } from './components/AboutUs/AboutUs';
+import { ForSale } from './components/ForSale/ForSale';
 //import { handleSearch } from './fetures/SearchFunctionality';
 
 const App: React.FC = () => {
@@ -37,6 +38,7 @@ const App: React.FC = () => {
             }
           />
           <Route path="/about-us" element={<AboutUs />} />
+
         </Routes>
       </div>
     </Router>

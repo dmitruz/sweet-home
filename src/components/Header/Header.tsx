@@ -23,6 +23,7 @@ export const Header: React.FC<HeaderProps> = ({ onFilter }) => {
                         </button>
                     </li>
                     <li className={styles.headerItem}>
+
                         <button
                             className={styles.headerLink}
                             onClick={() => onFilter('for sale')}

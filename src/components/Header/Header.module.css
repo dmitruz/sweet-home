@@ -22,6 +22,7 @@
     font-size: 24px;
     font-weight: bold;
     margin-left: 60px;
+    color: #585151;
 }
 
 
@@ -40,8 +41,31 @@
     color: rgb(7, 171, 225);
     font-weight: bold;
     font-size: 18px;
+    border: 1px transparent;
+    border-radius: 4px;
 }
 
 .headerLink:hover {
     color: #007bff;
+    border: 1px solid #007bff;
+}
+
+@media (max-width: 768px) {
+
+    .headerLink {
+        font-size: 14px;
+    }
+
+    .siteName {
+        font-size: 20px;
+    }
+
+    .headerItem {
+        margin-right: 10px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
 }

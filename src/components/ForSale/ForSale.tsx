@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ApartmentSearchProps } from '../../props/ApartmentSearchProps';
 import style from './SearchApartment.module.css';
 
-export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) => {
+export const ForSale: React.FC<ApartmentSearchProps> = ({ onSearch }) => {
     const [status, setStatus] = useState('');  // For rooms selection
     const [minPrice, setMinPrice] = useState<number | null>(null);
     const [maxPrice, setMaxPrice] = useState<number | null>(null);
@@ -117,4 +117,4 @@ export const SearchApartment: React.FC<ApartmentSearchProps> = ({ onSearch }) =>
     );
 };
 
-export default SearchApartment;
+export default ForSale;

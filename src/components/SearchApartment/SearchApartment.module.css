@@ -28,13 +28,33 @@
 
 .priceInput {
     width: 100px;
+    border: 1px solid blue;
+    border-radius: 2px;
         margin-right: 10px;
         cursor: pointer;
+        color: #585151;
+}
+
+.searchSelect {
+    padding: 2px;
+    border: 1px solid blue;
+    border-radius: 2px;
+    color: #585151;
+    
 }
 
 .searchBtn {
     margin-left: 10px;
-    width: 50px;
+    width: 70px;
+    border: 1px solid blue;
+    background-color: #fff;
+    border-radius: 4px;
+    color:#585151;
+    font-weight: 700;
+}
+
+.searchBtn:hover {
+    background-color: rgb(7, 171, 225);
 }
 
 .priceOptions {
@@ -56,4 +76,17 @@ position: absolute;
 
 .priceOptions div:hover {
     background-color: #f0f0f0;
+}
+
+
+@media (max-width: 768px) {
+
+.searchContainer {
+        
+        margin-right: 10px;
+       
+    }
+    .searchBtn {
+        margin-top: 20px;
+    }
 }

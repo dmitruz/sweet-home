@@ -11,49 +11,56 @@
             "http://localhost:3001/images/apartment1.jpg"
         ],
         "description": "Partly furnished 1 bedroom appartment on the 3-th floor.",
-        "more": "More info:"
+        "more": "Fully furnished 1 bedroom apartment. Electric heating Deposit: 900p. For more information please contact an agent.",
+        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.657040556367!2d-3.233712623212185!3d55.93798317315333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7007e19f1cb%3A0xc0b17fcf3aa1f61d!2s3%20Newton%20St%2C%20Edinburgh%20EH11%201TF!5e0!3m2!1sru!2suk!4v1734539676342!5m2!1sru!2suk",
+        "distance": "1.6 miles"
     },
     {
         "id": 2,
         "category": "for sale",
         "rooms": 2,
-        "name": "1 bedroom appartment FOR SALE",
-        "address": "Newton Street 3",
-        "price": "1000 p/m",
+        "name": "2 bedroom appartment FOR SALE",
+        "address": "Clayton Gardens 5a",
+        "price": "375000 p",
         "img": [
             "http://localhost:3001/images/apartment1.jpg",
             "http://localhost:3001/images/apartment1.jpg"
         ],
-        "description": "Partly furnished 1 bedroom appartment on the 3-th floor.",
-        "more": "More info:"
+        "description": "Uurnished 2 bedroom appartment on ground floor, next to to the city center.",
+        "more": "More info:",
+        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.815181355889!2d-3.2070049232112257!3d55.95257517315877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c797b6af5347%3A0x696a0aa6321cd0c6!2s115%20George%20St%2C%20Edinburgh%20EH2%204JN!5e0!3m2!1sru!2suk!4v1736326922684!5m2!1sru!2suk",
+        "distance": "1.1 miles"
     },
     {
         "id": 3,
         "category": "to rent",
         "rooms": 3,
-        "name": "1 bedroom appartment RENT",
-        "address": "Newton Street 3",
-        "price": "1000 p/m",
+        "name": "3 bedroom appartment  to RENT",
+        "address": "Colinton Road 29",
+        "price": "1450 p/m",
         "img": [
             "http://localhost:3001/images/apartment2.jpg",
             "http://localhost:3001/images/apartment1.jpg"
         ],
-        "description": "Partly furnished 1 bedroom appartment on the 3-th floor.",
-        "more": "More info:"
+        "description": "Furnished 3 bedroom appartment on the 1-th floor.",
+        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17876.001634206496!2d-3.229494907232805!3d55.94070181695659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c70bfb085179%3A0x6f85601ed097b2a0!2s29%20Colinton%20Rd%2C%20Edinburgh%20EH10%205DR!5e0!3m2!1sru!2suk!4v1736327340673!5m2!1sru!2suk",
+        "more": "Fully furnished 3 bedroom apartment. Gas heating. Deposit: 1500p. For more information please contact an agent.",
+        "distance": "1.6 miles"
     },
     {
         "id": 4,
         "category": "for sale",
         "rooms": 1,
-        "name": "2 bedroom appartment SALE",
+        "name": "1 bedroom appartment",
         "address": "Princess Street 87",
-        "price": "2300 p/m",
+        "price": "230000 p",
         "img": [
             "http://localhost:3001/images/apartment9.jpg",
             "http://localhost:3001/images/apartment1.jpg"
         ],
         "description": "Fully  furnished 2 bedroom appartment on the 5th floor.",
-        "more": "More info:"
+        "more": "Fully furnished 1 bedroom apartment. 2 floor. Central gas heating. For more information please contact an agent",
+        "distance": "1.3 miles"
     },
     {
         "id": 5,
@@ -61,13 +68,15 @@
         "rooms": 2,
         "name": "3 bedroom appartment RENT",
         "address": "Leith Walk 12",
-        "price": "1800 p/m",
+        "price": "1350 p/m",
         "img": [
             "http://localhost:3001/images/apartment4.jpg",
             "http://localhost:3001/images/apartment1.jpg"
         ],
-        "description": "Partly furnished 3 bedroom appartment on the 3-th floor.",
-        "more": "More info:"
+        "description": "Unrnished 2 bedroom appartment on the ground floor.",
+        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2232.790406550511!2d-3.1750080232099958!3d55.970334273165555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b8092aaac3f5%3A0xf4f12f494067e14c!2s12%20Leith%20Walk%2C%20Edinburgh%20EH6%205AA!5e0!3m2!1sru!2suk!4v1736328288011!5m2!1sru!2suk",
+        "more": "Fully furnished 3 bedroom apartment. 2 floor. Central gas heating. Deposit: 1500 p. For more information please contact an agent",
+        "distance": "1.3 miles"
     },
     {
         "id": 6,
@@ -75,68 +84,134 @@
         "rooms": 2,
         "name": "2 bedroom appartment",
         "address": "Leith Walk 23",
-        "price": "1200 p/m",
+        "price": "316000 p",
         "img": [
             "http://localhost:3001/images/apartment5.jpg",
             "http://localhost:3001/images/apartment1.jpg"
         ],
         "description": "Unfurnished 2 bedroom appartment on the 1-th floor.",
-        "more": "More info:"
+        "more": "Fully furnished 2 bedroom appartment on the 1-th floor. Central gas heating. For more details, Please contact our agents"
     },
     {
         "id": 7,
         "category": "to rent",
         "rooms": 1,
         "name": "1 bedroom appartment",
-        "address": "George Road 35",
+        "address": "Leith Walk 13",
         "price": "950 p/m",
         "img": [
             "http://localhost:3001/images/apartment6.jpg",
             "http://localhost:3001/images/apartment1.jpg"
         ],
         "description": "Unfurnished 1 bedroom appartment on the 3-th floor.",
-        "more": "More info:"
+        "more": "Unfurnished 1 bedroom apartment. 3 floor. Central gas heating. Deposit: 900 p. For more information please contact an agent",
+        "distance": "1.3 miles"
     },
     {
         "id": 8,
         "category": "for sale",
         "rooms": 1,
-        "name": "Studio",
+        "name": "1 bedroom appartment",
         "address": "High Street 14",
-        "price": "1200 p/m",
+        "price": "387000 p",
         "img": [
             "http://localhost:3001/images/apartment7.jpg",
             "http://localhost:3001/images/apartment1.jpg"
         ],
-        "description": "Fully  furnished studio appartment on 2nd floor.",
-        "more": "More info:"
+        "description": "Fully  furnished 1 bedroom appartment on 2nd floor.",
+        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.4037947831307!2d-3.1742431501943535!3d55.95970484989605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b8749cc071e5%3A0xa798f5cd588daf16!2s77%20Easter%20Rd%2C%20Edinburgh!5e0!3m2!1sru!2suk!4v1736328721004!5m2!1sru!2suk",
+        "more": "Fully furnished 1 bedroom appartment on the 3-th floor. Central gas heating. For more details, Please contact our agents"
     },
     {
         "id": 9,
         "category": "to rent",
         "rooms": 2,
         "name": "2 bedroom appartment",
-        "address": "York Place 2",
-        "price": "2500 p/m",
+        "address": "Easter Road 77",
+        "price": "1200 p/m",
         "img": [
             "http://localhost:3001/images/apartment8.jpg",
             "http://localhost:3001/images/apartment1.jpg"
         ],
-        "description": "Partly furnished 2 bedroom appartment on 3-th floor.",
-        "more": "More info:"
+        "description": "Partly furnished 2 bedroom appartment on 1-th floor.",
+        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.4037947831307!2d-3.1742431501943535!3d55.95970484989605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b8749cc071e5%3A0xa798f5cd588daf16!2s77%20Easter%20Rd%2C%20Edinburgh!5e0!3m2!1sru!2suk!4v1736328721004!5m2!1sru!2suk",
+        "more": "Unfurnished 1 bedroom apartment. 3 floor. Central gas heating. Deposit: 900 p. For more information please contact an agent",
+        "distance": "1.3 miles"
     },
     {
         "id": 10,
         "category": "for sale",
         "rooms": 2,
-        "name": "studio",
-        "address": "Princess Street 99",
-        "price": "1550 p/m",
+        "name": "1 bedroom appartment",
+        "address": "Pistol Gardens 22",
+        "price": "294000 p",
         "img": [
             "http://localhost:3001/images/apartment9.jpg",
             "http://localhost:3001/images/apartment1.jpg"
         ],
-        "description": "Fully furnished studio appartment on the 3-th floor.",
-        "more": "More info:"
+        "description": "Fully furnished  2 bedroom apartment  on the 1-th floor.",
+        "more": "Fully furnished 3 bedroom appartment on the 1-th floor. Central gas heating. For more details, Please contact our agents"
+    },
+    {
+        "id": 11,
+        "category": "to rent",
+        "rooms": 2,
+        "name": "2 bedroom appartment",
+        "address": "York Place 12",
+        "price": "1700 p/m",
+        "img": [
+            "http://localhost:3001/images/apartment8.jpg",
+            "http://localhost:3001/images/apartment1.jpg"
+        ],
+        "description": "Unfurnished 2 bedroom appartment on 3-th floor.",
+        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.602863027066!2d-3.196598908877645!3d55.95625490395595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c78dfcdbbd05%3A0x2cb1b3231da7787c!2s12%20York%20Pl%2C%20Edinburgh%20EH1%203EP!5e0!3m2!1sru!2suk!4v1736329138678!5m2!1sru!2suk",
+        "more": "Unfurnished 2 bedroom apartment. 3 floor. Clase to city center. Perfect location. Central gas heating. Deposit: 1400 p. For more information please contact an agent",
+        "distance": "0.4 miles"
+    },
+    {
+        "id": 12,
+        "category": "to rent",
+        "rooms": 2,
+        "name": "3 bedroom appartment RENT",
+        "address": "Leith Walk 12",
+        "price": "1350 p/m",
+        "img": [
+            "http://localhost:3001/images/apartment4.jpg",
+            "http://localhost:3001/images/apartment1.jpg"
+        ],
+        "description": "Unrnished 2 bedroom appartment on the ground floor.",
+        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2232.790406550511!2d-3.1750080232099958!3d55.970334273165555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b8092aaac3f5%3A0xf4f12f494067e14c!2s12%20Leith%20Walk%2C%20Edinburgh%20EH6%205AA!5e0!3m2!1sru!2suk!4v1736328288011!5m2!1sru!2suk",
+        "more": "Fully furnished 3 bedroom apartment. 2 floor. Central gas heating. Deposit: 1500 p. For more information please contact an agent",
+        "distance": "1.3 miles"
+    },
+    {
+        "id": 13,
+        "category": "to rent",
+        "rooms": 2,
+        "name": "2 bedroom appartment",
+        "address": "Easter Road 77",
+        "price": "1200 p/m",
+        "img": [
+            "http://localhost:3001/images/apartment8.jpg",
+            "http://localhost:3001/images/apartment1.jpg"
+        ],
+        "description": "Partly furnished 2 bedroom appartment on 1-th floor.",
+        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.4037947831307!2d-3.1742431501943535!3d55.95970484989605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b8749cc071e5%3A0xa798f5cd588daf16!2s77%20Easter%20Rd%2C%20Edinburgh!5e0!3m2!1sru!2suk!4v1736328721004!5m2!1sru!2suk",
+        "more": "Unfurnished 1 bedroom apartment. 3 floor. Central gas heating. Deposit: 900 p. For more information please contact an agent",
+        "distance": "1.3 miles"
+    },
+    {
+        "id": 14,
+        "category": "for sale",
+        "rooms": 3,
+        "name": "3 bedroom apartment",
+        "address": "Leith Walk 37",
+        "price": "287000 p",
+        "img": [
+            "http://localhost:3001/images/apartment9.jpg",
+            "http://localhost:3001/images/apartment1.jpg"
+        ],
+        "description": "Fully furnished 3 bedroom appartment on the 1-th floor.",
+        "more": "Fully furnished 3 bedroom appartment on the 1-th floor. Central gas heating."
     }
 ]

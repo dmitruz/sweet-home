@@ -16,7 +16,9 @@
     margin: 20px;
     width: 100%;
     height: 100%;
-    color: black;
+    color: #585151;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .go_back_btn {
@@ -33,4 +35,63 @@
 
 .go_back_btn:hover {
     color: #007bff;
+}
+
+.contactUs {
+    color:#585151;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact_form h2 {
+    margin-bottom: 20px;
+}
+
+.contact_form input,
+.contact_form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact_form button {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact_form button:hover {
+    background-color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .about__us__text {
+        font-size: 14px;
+    }
+
+ .about__hero {
+        height: 400px;
+        background-image: url('../../images/istockphoto-532575478-612x612.jpg');
+    }
+        .contact_form {
+           
+            max-width: 400px;
+        }
+            
+        .contact_form textarea {
+            font-size: 14px;
+            height: 100px;
+        }
 }

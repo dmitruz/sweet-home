@@ -38,11 +38,32 @@
     font-weight: 500;
     color: #585151;
 }
+.apartmentDescriptionBtn {
+    border: 1px solid blue;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.apartmentDescriptionBtn:hover {
+    background-color: rgb(7, 171, 225);
+}
 
 .apartmentMore {
     display: flex;
+    flex-direction: column;
 }
 
+.locationContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.distance {
+    font-weight: 700;
+}
+
+.arrow {
+    margin-left: 10px;
+}
 .customSlickArrow {
     position: absolute;
     top: 90% !important;

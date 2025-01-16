@@ -6,4 +6,6 @@ export interface ApartmentProps {
     address: string;
     description: string;
     more: string;
+    iframe: string;
+    distance: string;
 }

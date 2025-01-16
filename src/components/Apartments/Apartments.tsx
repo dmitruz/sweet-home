@@ -1,6 +1,7 @@
 import React from 'react';
 import data from '../../apartments.json';
 import { Apartment } from '../Apartment/Apartment';
+import Footer from '../Footer/Footer';
 import styles from './Apartments.module.css';
 
 
@@ -31,9 +32,12 @@ export const Apartments: React.FC<ApartmentsProps> = ({ selectedCategory, select
                         address={apartment.address}
                         description={apartment.description}
                         more={apartment.more}
+                        iframe={apartment.iframe || ''}
+                        distance={apartment.distance || ''}
                     />
                 ))}
             </div>
+            <Footer />
         </>
     );
 };
