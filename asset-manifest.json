@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/dmitruz/sweet-home/static/css/main.2f65d798.css",
+    "main.js": "/dmitruz/sweet-home/static/js/main.131b0943.js",
+    "static/media/real-estate-agent-photos-background.png": "/dmitruz/sweet-home/static/media/real-estate-agent-photos-background.c7c2ebddcbe45ef2f0dd.png",
+    "static/media/istockphoto-532575478-612x612.jpg": "/dmitruz/sweet-home/static/media/istockphoto-532575478-612x612.ff72c714adaad454e4d9.jpg",
+    "static/media/logo.png": "/dmitruz/sweet-home/static/media/logo.3e2aacb07f781d9b4a6a.png",
+    "static/media/slick.svg": "/dmitruz/sweet-home/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/dmitruz/sweet-home/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/dmitruz/sweet-home/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/dmitruz/sweet-home/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/dmitruz/sweet-home/index.html",
+    "main.2f65d798.css.map": "/dmitruz/sweet-home/static/css/main.2f65d798.css.map",
+    "main.131b0943.js.map": "/dmitruz/sweet-home/static/js/main.131b0943.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f65d798.css",
+    "static/js/main.131b0943.js"
+  ]
+}
