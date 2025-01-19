@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Apartments } from './components/Apartments/Apartments';
 import { Header } from './components/Header/Header';
 import './App.css';
@@ -7,6 +7,7 @@ import { SearchApartment } from './components/SearchApartment/SearchApartment';
 import { AboutUs } from './components/AboutUs/AboutUs';
 
 const App: React.FC = () => {
+  console.log('PUBLIC_URL:', process.env.REACT_APP_PUBLIC_URL);
   const [filterCategory, setFilterCategory] = useState<string>('');
   const [selectedRooms, setSelectedRooms] = useState<number | null>(null);
   const [priceRange, setPriceRange] = useState<{ min: number; max: number }>({
@@ -33,27 +34,25 @@ const App: React.FC = () => {
 
 
   return (
-    <Router>
-      <div className="App">
-        <Header onFilter={handleFilter} />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <SearchApartment onSearch={handleSearchFilter}
-                  priceRange={priceRange}
-                />
-                <Apartments selectedCategory={filterCategory} selectedRooms={selectedRooms} />
-              </>
-            }
-          />
-          <Route path="/about-us" element={<AboutUs />} />
 
-        </Routes>
-      </div>
-    </Router>
+    <div className="App">
+      <Header onFilter={handleFilter} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <SearchApartment onSearch={handleSearchFilter}
+                priceRange={priceRange}
+              />
+              <Apartments selectedCategory={filterCategory} selectedRooms={selectedRooms} />
+            </>
+          }
+        />
+        <Route path="/about-us" element={<AboutUs />} />
 
+      </Routes>
+    </div>
   );
 }
 
