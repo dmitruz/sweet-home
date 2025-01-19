@@ -25,7 +25,7 @@ export const Apartments: React.FC<ApartmentsProps> = ({ selectedCategory, select
                 {filteredApartments.map((apartment) => (
                     <Apartment
                         key={apartment.id}
-                        img={apartment.img.map((path) => `${process.env.PUBLIC_URL}${path}`)}
+                        img={apartment.img.map((path) => `${process.env.REACT_APP_PUBLIC_URL}${path}`)}
                         category={apartment.category}
                         price={apartment.price}
                         name={apartment.name}
