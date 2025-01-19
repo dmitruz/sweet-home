@@ -56,9 +56,9 @@ export const Apartment: React.FC<ApartmentProps> = ({ img, category, price, name
   return (
     <div className={styles.apartmentCard}>
       <Slider {...settings}>
-        {img.map((image, index) => (
+        {img.map((src, index) => (
           <div key={index}>
-            <img className={styles.apartmentImg} src={image} alt={`${name} ${index + 1} `} />
+            <img className={styles.apartmentImg} src={src} alt={`${name} ${index + 1} `} />
           </div>
         ))}
       </Slider>

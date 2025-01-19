@@ -12,7 +12,7 @@ interface ApartmentsProps {
 }
 
 export const Apartments: React.FC<ApartmentsProps> = ({ selectedCategory, selectedRooms }) => {
-    // Filter apartments based on selected category
+
     const filteredApartments = data.filter((apartment) => {
         const matchesCategory = selectedCategory ? apartment.category.toLowerCase() === selectedCategory.toLowerCase() : true;
         const matchesRooms = selectedRooms !== null ? apartment.rooms === selectedRooms : true;
@@ -25,7 +25,7 @@ export const Apartments: React.FC<ApartmentsProps> = ({ selectedCategory, select
                 {filteredApartments.map((apartment) => (
                     <Apartment
                         key={apartment.id}
-                        img={apartment.img}
+                        img={apartment.img.map((path) => `${process.env.PUBLIC_URL}${path}`)}
                         category={apartment.category}
                         price={apartment.price}
                         name={apartment.name}
