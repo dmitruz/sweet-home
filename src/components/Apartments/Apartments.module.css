@@ -8,3 +8,9 @@
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+    .apartmentContainer {
+        grid-template-columns: 1fr;
+        /* 1 column for mobile */
+    }
+}
