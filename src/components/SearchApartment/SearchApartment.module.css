@@ -88,5 +88,21 @@ position: absolute;
     }
     .searchBtn {
         margin-top: 20px;
+        width: 100px;
+        height: 25px;
+    }
+}
+.searchWrapper {
+    display: flex;
+    margin-left: 10px;
+}
+
+.searchFilter {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .searchFilter {
+        display: none;
     }
 }

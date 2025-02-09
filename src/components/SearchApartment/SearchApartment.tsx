@@ -64,49 +64,51 @@ export const SearchApartment: React.FC<ExtendedApartmentSearchProps> = ({ onSear
 
     return ( // Ensure JSX is returned
         <section className={style.searchBlock}>
-            <div className={style.searchContainer}>
-                <div>
-                    <span className={style.searchStatus}>Filters:</span>
-                </div>
-                <select
-                    className={style.searchSelect}
-                    onChange={(e) => setStatus(e.target.value)}
-                    value={status}
-                >
-                    <option value="">Select number of rooms</option>
-                    <option value="1">1 bedroom</option>
-                    <option value="2">2 bedrooms</option>
-                    <option value="3">3 bedrooms</option>
-                </select>
-            </div>
-            <div className={style.priceContainer}>
-                <input
-                    className={style.priceInput}
-                    type="text"
-                    value={minPrice ? minPrice.toString() : ''}
-                    placeholder="Min Price"
-                    readOnly
-                    onClick={() => setShowMinDropdown(!showMinDropdown)}
-                />
-                {showMinDropdown && (
-                    <div ref={minDropdownRef} className={style.priceOptions}>
-                        {priceOptions.map((price) => (
-                            <div key={price} onClick={() => handleMinPriceSelect(price)}>
-                                {price}
-                            </div>
-                        ))}
+            <div className={style.searchWrapper}>
+                <div className={style.searchContainer}>
+                    <div className={style.searchFilter}>
+                        <span className={style.searchStatus}>Filters:</span>
                     </div>
-                )}
-            </div>
-            <div className={style.priceContainer}>
-                <input
-                    className={style.priceInput}
-                    type="text"
-                    value={maxPrice ? maxPrice.toString() : ''}
-                    placeholder="Max Price"
-                    readOnly
-                    onClick={() => setShowMaxDropdown(!showMaxDropdown)}
-                />
+                    <select
+                        className={style.searchSelect}
+                        onChange={(e) => setStatus(e.target.value)}
+                        value={status}
+                    >
+                        <option value="">Select number of rooms</option>
+                        <option value="1">1 bedroom</option>
+                        <option value="2">2 bedrooms</option>
+                        <option value="3">3 bedrooms</option>
+                    </select>
+                </div>
+                <div className={style.priceContainer}>
+                    <input
+                        className={style.priceInput}
+                        type="text"
+                        value={minPrice ? minPrice.toString() : ''}
+                        placeholder="Min Price"
+                        readOnly
+                        onClick={() => setShowMinDropdown(!showMinDropdown)}
+                    />
+                    {showMinDropdown && (
+                        <div ref={minDropdownRef} className={style.priceOptions}>
+                            {priceOptions.map((price) => (
+                                <div key={price} onClick={() => handleMinPriceSelect(price)}>
+                                    {price}
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
+                <div className={style.priceContainer}>
+                    <input
+                        className={style.priceInput}
+                        type="text"
+                        value={maxPrice ? maxPrice.toString() : ''}
+                        placeholder="Max Price"
+                        readOnly
+                        onClick={() => setShowMaxDropdown(!showMaxDropdown)}
+                    />
+                </div>
                 {showMaxDropdown && (
                     <div ref={maxDropdownRef} className={style.priceOptions}>
                         {priceOptions.map((price) => (

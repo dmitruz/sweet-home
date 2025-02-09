@@ -19,7 +19,7 @@ export const Header: React.FC<HeaderProps> = ({ onFilter }) => {
                             className={styles.headerLink}
                             onClick={() => onFilter('to rent')}
                         >
-                            To rent
+                            To Rent
                         </button>
                     </li>
                     <li className={styles.headerItem}>
@@ -28,13 +28,15 @@ export const Header: React.FC<HeaderProps> = ({ onFilter }) => {
                             className={styles.headerLink}
                             onClick={() => onFilter('for sale')}
                         >
-                            For sale
+                            For Sale
                         </button>
                     </li>
                     <li className={styles.headerItem}>
-                        <Link to="/about-us" className={styles.headerLink}>
-                            About Us
-                        </Link>
+                        <button className={styles.headerLink}>
+                            <Link className={styles.headerLink} to="/about-us">
+                                About Us
+                            </Link>
+                        </button>
                     </li>
                 </ul>
             </nav>

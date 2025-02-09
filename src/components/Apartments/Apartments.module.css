@@ -1,4 +1,3 @@
-
 .apartmentContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -11,6 +10,7 @@
 @media (max-width: 768px) {
     .apartmentContainer {
         grid-template-columns: 1fr;
-        /* 1 column for mobile */
+        margin: 20px 0 0 0;
+        padding: 0;
     }
 }
